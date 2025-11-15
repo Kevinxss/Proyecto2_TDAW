@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/carrito.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito - pokestore</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="">Saldo</a></li>
+                <li><a href="administrar_usuario.html">Administrar</a></li>
+                <li><a href="">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Mi Carrito</h1>
+    
+    <div id="carrito-container" class="card-container">
+        <p>Cargando carrito...</p>
+    </div>
+    
+    <hr>
+    
+    <div class="resumen-compra">
+        <h2>Total: <span id="total-precio">$0.00</span></h2>
+        <button id="btn-checkout">💰 Comprar Todo</button>
+        <p id="mensaje-checkout"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin</title>
+  <link rel="icon" href="data:,"> <!-- evita el error favicon.ico 404 -->
+</head>
+<body>
+  <h1>Inicio de sesión (Administrador)</h1>
+
+  <form id="form-login-admin">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+
+    <button type="submit">Ingresar</button>
+  </form>
+
+  <p id="mensaje" style="color:red;"></p>
+
+  
+  <script src="{{ url_for('static', filename='js/login_admin.js') }}"></script>
+</body>
+</html>

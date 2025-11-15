@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/pokestore.js" defer></script> -->
+    <!-- <script src="js/administrar_usuario.js" defer></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>administrar usuario - pokestore</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="">Saldo</a></li>
+                <li><a href="administrar_usuario.html">Administrar</a></li>
+                <li><a href="">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="" class="formulario" id="formularioActualizar">
+        <h1>Actualizar datos</h1>
+
+        <p>Tu saldo es: <strong id="saldoUsuario">Cargando...</strong></p> <br> <br>
+
+        <label for="nombre">Nuevo nombre de usuario</label>
+        <input type="text" id="usuario" required> <br><br>
+
+        <label for="">nuevo telefono</label>
+        <input type="text" id="telefono" required> <br><br>
+
+        <button type="submit">Actualizar datos</button>
+        <br> <br>
+        <button  id="btnLogout" class="button-2">Cerrar sesion</button>
+        <br> <br>
+        <button id="btnDelete" class="button-peligro">Eliminar cuenta</button>
+
+        <p id="mensaje"></p>
+    </form>
+</body>
+</html>
